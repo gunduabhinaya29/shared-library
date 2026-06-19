@@ -1,0 +1,4 @@
+def call() {
+  sh 'rm -rf cont1 || true '
+  sh 'docker run -d --name cont1 -p 5000:5000 image1 '
+}
